@@ -23,3 +23,7 @@ use Concrete\Core\View\View;
 <body>
     <!-- C5 Wrapper Class -->
     <div class="<?php  echo $c->getPageWrapperClass()?>">
+
+    <div class="header">
+        
+    </div>

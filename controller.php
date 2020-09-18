@@ -23,7 +23,7 @@ class Controller extends Package
     public function install()
     {
         $pkg = parent::install();
-        PageTheme::add('vida', $pkg);
+        PageTheme::add('chromium', $pkg);
     }
 
 }
