@@ -1,3 +1,41 @@
 .header {
-    background-color: #ccc;
+    background-color: #F0EFEF;
+    padding:20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        img {
+            width: auto;
+            height: 50px;
+        }
+    }
+    .contact {
+        text-align: right;
+        padding-right: 20px;
+
+        h1, p, a {
+            margin:0;
+            font-weight: 200;
+        }
+        h1 {
+            font-size: 48px;
+            color: #232323;
+            text-align: left;
+        }
+        p {
+            font-size: 22px;
+        }
+        a {
+            color: #232323;
+            text-decoration: none;
+            font-family: Roboto-Light;
+            font-size: 18px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }

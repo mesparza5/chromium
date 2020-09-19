@@ -1,8 +1,53 @@
 body {
   background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+  margin: 0 !important;
+  padding: 0;
 }
 
 .header {
-  background-color: #ccc;
+  background-color: #F0EFEF;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  width: auto;
+  height: 50px;
+}
+
+.header .contact {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.header .contact h1,
+.header .contact p,
+.header .contact a {
+  margin: 0;
+  font-weight: 200;
+}
+
+.header .contact h1 {
+  font-size: 48px;
+  color: #232323;
+  text-align: left;
+}
+
+.header .contact p {
+  font-size: 22px;
+}
+
+.header .contact a {
+  color: #232323;
+  text-decoration: none;
+  font-family: Roboto-Light;
+  font-size: 18px;
+}
+
+.header .contact a:hover {
+  text-decoration: none;
 }
 
