@@ -25,13 +25,16 @@ use Concrete\Core\View\View;
     <!-- C5 Wrapper Class -->
     <div class="<?php  echo $c->getPageWrapperClass()?>">
 
-    <div class="container header">
-        <div class="logo">
-            <img src="<?= $view->getThemePath() ?>/images/logo.svg" alt="logo"/>
-        </div>
-        <div class="contact">
-            <h1>Mike Esparza</h1>
-            <p>(310)612-8398</p>
-            <p><a href="mailto:mikeesparza5@gmail.com">mikeesparza5@gmail.com</a></p>
+    <div id="headerNav">
+        <div class="container header">
+            <div class="logo">
+                <img src="<?= $view->getThemePath() ?>/images/logo.svg" alt="logo"/>
+            </div>
+            <div class="contact">
+                <p>
+                    Mike Esparza / (310)612-8398 / 
+                    <a href="mailto:mikeesparza5@gmail.com">mikeesparza5@gmail.com</a>
+                </p>
+            </div>
         </div>
     </div>

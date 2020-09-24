@@ -1,15 +1,27 @@
+#headerNav {
+    display: none;
+    &.show {
+        display: block;
+    }
+    &.hide {
+        display: none;
+    }
+}
 .header {
-    background-color: #F0EFEF;
+    background-color: rgba(240, 239, 239, 0.1);
     padding:20px;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    position: fixed;
+    width: 100%;
 
     .logo {
         img {
             width: auto;
-            height: 50px;
+            height: 30px;
         }
     }
     .contact {
@@ -17,23 +29,19 @@
         padding-right: 20px;
 
         h1, p, a {
+            color: #aaaaaa;
             margin:0;
             font-weight: 200;
         }
-        h1 {
-            font-size: 48px;
-            color: #232323;
-            text-align: left;
-        }
         p {
-            font-size: 22px;
+            font-size: 18px;
         }
         a {
-            color: #232323;
             text-decoration: none;
             font-family: Roboto-Light;
             font-size: 18px;
             &:hover {
+                color: #fff;
                 text-decoration: none;
             }
         }
