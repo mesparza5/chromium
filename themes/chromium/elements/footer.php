@@ -9,7 +9,7 @@ use Concrete\Core\View\View;
         const topNav = document.getElementById("headerNav")
         const scrolling = function() {
             const y = window.scrollY
-            if (y >= 700) {
+            if (y >= 500) {
                 topNav.className = 'show'
             } else {
                 topNav.className = 'hide'
