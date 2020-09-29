@@ -19,7 +19,7 @@ class Bash extends Component {
   }
 
   componentDidMount() {
-    axios.get('/api/v1/get/navigation').then((response) => {
+    axios.get('/index.php/api/v1/get/navigation').then((response) => {
       this.getPage(response.data[0].id);
 
       this.setState({
@@ -31,7 +31,7 @@ class Bash extends Component {
   }
 
   getPage(id) {
-    axios.get(`/api/v1/get/page/${id}`).then((response) => {
+    axios.get(`/index.php/api/v1/get/page/${id}`).then((response) => {
       this.setState({
         title: response.data.title,
         content: response.data.content,
