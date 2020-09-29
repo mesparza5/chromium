@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Box, Paper, Snackbar } from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
-import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
-import HighlightOffOutlinedIcon from "@material-ui/icons/HighlightOffOutlined";
-import Bash from "./bash";
+import React, { Component } from 'react';
+import { Box, Paper, Snackbar } from '@material-ui/core';
+import Alert from '@material-ui/lab/Alert';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import HighlightOffOutlinedIcon from '@material-ui/icons/HighlightOffOutlined';
+import Bash from './bash';
 
-import "../scss/containers/home.scss";
+import '../scss/containers/home.scss';
 
 class Homepage extends Component {
   constructor() {
@@ -51,7 +51,7 @@ class Homepage extends Component {
               this.handleCloseAlert();
             }}
           >
-            Why do you want to close the window? Pretty sure there are important
+            Why do you want to close the window? Pretty sure there&apos;s important
             information in there ;)
           </Alert>
         </Snackbar>
