@@ -1,21 +1,45 @@
 .landing-top {
-    min-height: 800px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @media (min-width: 375px) and (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: safe;
+  }
 
-    .whoami {
-        margin:20px;
-
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            color: #fff;
-            font-weight: 200;
-            font-size: 3rem;
-        }
-        p {
-            font-family: 'Courier New', Courier, monospace;
-            color: #f4f4f4;
-        }
+  .landing-image {
+    min-width: 500px;
+    @media (min-width: 375px) and (max-width: 768px) {
+      width: 80% !important;
+      min-width: 80% !important;
     }
+  }
+
+  .whoami {
+    margin: 20px;
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      font-weight: 200;
+      font-size: 3rem;
+    }
+    p {
+      font-family: 'Courier New', Courier, monospace;
+      color: #f4f4f4;
+      margin: 0;
+      .highlight {
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      p {
+        white-space: nowrap;
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

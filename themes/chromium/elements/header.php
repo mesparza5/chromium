@@ -15,8 +15,8 @@ use Concrete\Core\View\View;
     ?>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= $view->getThemePath()?>/css/home.css" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

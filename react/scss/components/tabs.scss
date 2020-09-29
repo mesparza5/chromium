@@ -1,0 +1,41 @@
+.me-tabs {
+  display: flex;
+  flex-grow: 1;
+  min-height: 400px;
+  align-items: center;
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: block;
+  }
+  .tab-content {
+    flex-grow: 2;
+    align-self: flex-start;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+
+    @media screen and (min-device-width: 1200px) {
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .loading {
+      height: 500px;
+      width: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .page {
+      width: 550px;
+    }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      .loading,
+      .page {
+        width: 100%;
+      }
+    }
+  }
+}

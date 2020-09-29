@@ -29,7 +29,8 @@ class ServiceProvider extends Provider
                 /**
                 * @var $groupRouter Router
                 */
-                $groupRouter->get('/get/page/{path}', [Content::class, 'getContent']);
+                $groupRouter->get('/get/page/{id}', [Content::class, 'getContent']);
+                $groupRouter->get('/get/navigation', [Content::class, 'getNavigation']);
             });
     }
 }

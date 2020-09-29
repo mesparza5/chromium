@@ -5,14 +5,27 @@ $this->inc('elements/header.php'); ?>
 <div class="landing-top">
     <div class="whoami">
         <h1><b><span style="font-family: 'Courier New', Courier, monospace;">$</span></b>Mike Esparza_</h1>
-        <p class="gray-200">/**</p>
-        <p><span class="gray-200">* @var </span><b>$seniorSoftwareEngineer</b> <span class="gray-200">\Role</span></p>
-        <p><span class="gray-200">* @see \Leadership::</span><b>softwareTeamLead</b></p>
-        <p><span class="gray-200">*/</span></p>
-        <p class="gray-200"><?= h("<phone value='") . "<b><span class='white'>(310)612-8398</span></b>" . "'/>" ?></p>
-        <p class="gray-200"><?= h('<email>') . "<b><span class='white'>mikeesparza5@gmail.com</span></b>" . h('<email/>')?></p>
+        <p>/**</p>
+        <p>* @var <span class="highlight">$seniorSoftwareEngineer</span> \Role</p>
+        <p>* @see \Leadership::<span class="highlight">softwareTeamLead</span></p>
+        <p>*/</p>
+        <p>&nbsp;</p>
+        <p>class Info extends CandidateData</p>
+        <p>
+            { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;protected $phone = &apos;<span class="highlight">(310) 612-8398</span>&apos;;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;protected $email = &apos;<span class="highlight">mikeesparza5@gmail.com</span>&apos;;
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public function  getInfo() <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $phone . strtolower($email); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }
+        </p>
+            
+        
     </div>
-    <div class="landing-image" style="min-width:500px;">
+    <div class="landing-image">
         <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
             <g transform="scale(0.9) translate(-450, 0)">
                 <g id="imac" class="computer">
